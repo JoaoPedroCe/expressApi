@@ -1,5 +1,5 @@
 const express = require("express");
-const { send, sendPaginated } = require("../handler/response");
+const { send, sendPaginated } = require("../http/handler/response");
 /**
  *
  * @param {express.Application} app
