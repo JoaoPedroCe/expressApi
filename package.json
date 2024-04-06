@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon ./app/index.js",
+    "start": "nodemon ./app/index.js --env-file=.env",
     "format": "prettier --write .",
     "prepare": "husky"
   },
@@ -15,7 +15,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.19.2"
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "sequelize": "^6.37.2"
   },
   "devDependencies": {
     "globals": "^15.0.0",
