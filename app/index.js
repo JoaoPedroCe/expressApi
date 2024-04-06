@@ -1,7 +1,9 @@
 const express = require("express");
 const { apiRoutes } = require("./routes");
+const { port } = require("../config/env");
 const app = express();
-const port = 3000;
+
+console.log(process.env.HOST);
 
 app.listen(port);
 apiRoutes(app);
