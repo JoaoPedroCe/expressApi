@@ -1,9 +1,15 @@
+const UserService = require("../../../services/UserService");
 const Controller = require("../../Controller");
-const { send } = require("../../handler/response");
 
 class CreateUserController extends Controller {
+  constructor() {
+    super();
+  }
+
   async handle(req, res) {
-    super.sendResponse(res, { name: "Vicky" });
+    const service = new UserService();
+    const { message } = await service.handle();
+    super.sendResponse(res, { name: message });
   }
 }
 
