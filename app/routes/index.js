@@ -1,4 +1,4 @@
-import { CreateUserController } from "../http/controller/Create/CreateUserController";
+const CreateUserController = require("../http/controller/Create/CreateUserController");
 
 const createUserController = new CreateUserController();
 

@@ -1,7 +1,11 @@
 const Controller = require("../../Controller");
+const { send } = require("../../handler/response");
 
-export class CreateUserController extends Controller {
+class CreateUserController extends Controller {
   async handle(req, res) {
-    this.sendResponse(req, res);
+    console.log(req.body);
+    return send(res, { body: "Create User" });
   }
 }
+
+module.exports = CreateUserController;

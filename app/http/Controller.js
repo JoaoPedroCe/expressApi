@@ -1,6 +1,8 @@
+const { send } = require("./handler/response");
+
 class Controller {
   sendResponse(res, body) {
-    console.log("Controller send");
+    return send(res, body);
   }
 }
 
