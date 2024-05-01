@@ -2,7 +2,7 @@ const UserRepository = require("../repository/UserRepository");
 
 class UserService {
   constructor() {
-    super.userRepository = new UserRepository();
+    this.userRepository = new UserRepository();
   }
 
   async handle(data) {
